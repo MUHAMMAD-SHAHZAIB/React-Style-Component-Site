@@ -36,7 +36,7 @@ const Navbar = () => {
 const Nav = styled.nav`
   .navbar-list {
     display: flex;
-    gap: 1.8rem;
+    gap: 4rem;
 
     li {
       list-style: none;

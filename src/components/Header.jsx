@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <>
       <MainHeader>
-        <NavLink>
+        <NavLink to="/">
           <div className="logo">Zaib Web Developer</div>
         </NavLink>
         <Navbar />
