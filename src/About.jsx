@@ -1,7 +1,12 @@
 import React from "react";
+import HeroSection from "./components/HeroSection";
 
 const About = () => {
-  return <div>about us</div>;
+  const data= {
+    name:"Zaib Web Designer",
+    image:"./images/about1.svg",
+  }
+  return <HeroSection {...data}/>;
 };
 
 export default About;
