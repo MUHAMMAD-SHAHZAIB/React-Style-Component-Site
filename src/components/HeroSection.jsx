@@ -2,8 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import { Button } from "../Styles/Button";
+import { useStateContext } from "../ContextApi";
 
-const HeroSection = ({name,image}) => {
+const HeroSection = () => {
+  const {name, image} = useStateContext();
   return (
     <Wrapper>
       <div className="container grid grid-two-column">
@@ -12,7 +14,7 @@ const HeroSection = ({name,image}) => {
           <p className="hero-top-data">This is Me</p>
           <h1 className="hero-heading">{name}</h1>
           <p className="hero-para">
-            {" "}
+           
             I'm Muhammad Shahzaib. A Full stack Developer, youtuber and
             freelancer. A Full stack Developer, youtuber and freelancer.
           </p>

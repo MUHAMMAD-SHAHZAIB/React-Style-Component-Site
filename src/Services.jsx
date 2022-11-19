@@ -1,7 +1,9 @@
 import React from "react";
+import { useStateContext } from "./ContextApi";
 
 const Services = () => {
-  return <div>services</div>;
+  const name = useStateContext();
+  return <div>services {name}</div>;
 };
 
 export default Services;

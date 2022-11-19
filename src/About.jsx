@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HeroSection from "./components/HeroSection";
+import { useStateContext } from "./ContextApi";
 
 const About = () => {
-  const data= {
-    name:"Zaib Web Designer",
-    image:"./images/about1.svg",
-  }
-  return <HeroSection {...data}/>;
+  const { updatAboutPage } = useStateContext();
+  useEffect(() => {
+    updatAboutPage();
+  }, []);
+
+  return <HeroSection />;
 };
 
 export default About;
