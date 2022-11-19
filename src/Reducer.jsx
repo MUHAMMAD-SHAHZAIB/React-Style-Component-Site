@@ -12,6 +12,12 @@ export const Reducer = (state, action) => {
         name: action.payload.name,
         image: action.payload.image,
       };
+
+    case "Get_Services":
+      return {
+        ...state,
+        services: action.payload.products,
+      };
   }
   return state;
 };
