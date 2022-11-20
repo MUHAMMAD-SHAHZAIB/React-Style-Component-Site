@@ -11,7 +11,7 @@ const Services = () => {
       <h2 className="common-heading">Our Services</h2>
       <div className="container grid grid-three-column">
         {services.map(curElem => {
-          const { id, name, image, description,thumbnail } = curElem;
+          const { id, name, description,thumbnail } = curElem;
 
           return (
             <div key={id} className="card">

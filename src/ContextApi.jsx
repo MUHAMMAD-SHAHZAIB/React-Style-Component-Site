@@ -12,7 +12,6 @@ const intialState = {
   name: "",
   image: "",
   services: [],
-
 };
 
 const AppProvider = ({ children }) => {
@@ -25,7 +24,6 @@ const AppProvider = ({ children }) => {
       payload: {
         name: "Zaib Web Developer",
         image: "./images/hero.svg",
-        
       },
     });
   };
@@ -47,7 +45,6 @@ const AppProvider = ({ children }) => {
 
   // to get api data
   const getServices = async url => {
-   
     try {
       const res = await fetch(url);
       const data = await res.json();
@@ -55,11 +52,8 @@ const AppProvider = ({ children }) => {
       dispatch({
         type: "Get_Services",
         payload: data,
-        isloading:false,
       });
-     
     } catch (error) {
-       
       console.log(error);
     }
   };
