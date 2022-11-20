@@ -6,6 +6,7 @@ import About from "./About";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Error from "./Error";
+import Goto from "./components/Goto";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
@@ -37,6 +38,7 @@ function App() {
     <>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
+        <Goto />
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
