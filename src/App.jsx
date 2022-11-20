@@ -5,6 +5,7 @@ import Services from "./Services";
 import About from "./About";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Error from "./Error";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
@@ -35,13 +36,14 @@ function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <GlobalStyle/>
+        <GlobalStyle />
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<Services />} />
+          <Route path="*" element={<Error />} />
         </Routes>
         <Footer />
       </ThemeProvider>
